@@ -9,7 +9,7 @@ jobs:
         id: selftest
         uses: forkbabu/AutoEdit@master
         with:
-          path: "main.tex"
+          path: "tests/main.tex"
       - uses: actions/upload-artifact@v1
         with: 
           name: rendered_file
