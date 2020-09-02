@@ -4,5 +4,6 @@ FROM python:3.7
 ADD . /app
 WORKDIR /app/tests
 
-RUN pip install python_latex
-CMD python_latex
+RUN apt-get install texlive-base
+RUN chmod +x /app/main.sh
+CMD sh /app/main.sh
