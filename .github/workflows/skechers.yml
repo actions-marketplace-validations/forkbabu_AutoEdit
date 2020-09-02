@@ -1,4 +1,4 @@
-name: Integration Test
+name: PDF Test
 on: [push]
 jobs:
   build:
@@ -11,6 +11,3 @@ jobs:
         with:
           path: "main.tex"
       - uses: actions/upload-artifact@v1
-        with:
-          name: styled_image
-          path: styled_output
