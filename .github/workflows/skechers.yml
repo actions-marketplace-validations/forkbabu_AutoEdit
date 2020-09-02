@@ -11,3 +11,6 @@ jobs:
         with:
           path: "main.tex"
       - uses: actions/upload-artifact@v1
+        with: 
+          name: rendered_file
+          path: rendered_output
