@@ -1,4 +1,3 @@
-import pdflatex
 from pdflatex import PDFLaTeX
 import os
 path = os.environ["INPUT_PATH"]
