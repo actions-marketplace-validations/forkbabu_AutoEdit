@@ -1,3 +1,4 @@
+import pdflatex
 from pdflatex import PDFLaTeX
 
 pdfl = PDFLaTeX.from_texfile('main.tex')
