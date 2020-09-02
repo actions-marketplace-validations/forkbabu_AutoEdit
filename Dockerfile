@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-FROM python:3.6
+FROM python:3.7
 
 ADD . /app
 WORKDIR /app
