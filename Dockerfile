@@ -4,7 +4,10 @@ FROM python:3.7
 ADD . /app
 WORKDIR /app
 
-RUN apt-get install texlive-pictures texlive-science texlive-latex-extra latexmk texlive-core texlive-latex-base
+RUN sudo apt-get install texlive-latex-base 
+RUN sudo apt-get install texlive-fonts-recommended
+RUN sudo apt-get install texlive-fonts-extra
+RUN sudo apt-get install texlive-latex-extra
 RUN pip install pylatex pdflatex
 
 RUN chmod +x /app/main.py
