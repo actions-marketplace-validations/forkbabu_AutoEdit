@@ -1,0 +1,9 @@
+name: "LaTeX-to-PDF github action"
+description: "Compiles LaTeX files and generates PDF as artifact"
+author: "Sayantan Das"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "image"
+  color: "blue"
