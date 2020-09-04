@@ -1,9 +1,6 @@
 FROM ubuntu:18.04
-FROM python:3.7
-
-ADD . /app
-WORKDIR /app/tests
-
-
-RUN chmod +x /app/main.sh
-CMD sh /app/main.sh
+ADD . app
+WORKDIR app/tests
+RUN apt-get update && apt-get install -y \
+    texlive-base
+CMD sh main.sh
